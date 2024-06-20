@@ -6,7 +6,7 @@ export function MainApp() {
     <div>
       <header className="app-header">
         Welcome to Ghibli Film Shops
-        <small>The Best Film Ever</small>
+        <small>The Best Films Ever</small>
       </header>
       
       <Outlet />

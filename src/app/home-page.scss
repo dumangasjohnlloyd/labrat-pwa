@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f0f0;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .film-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .film-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .film-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  .film-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .film-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .film-director, .film-release {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .film-item:hover .film-info {
+    background-color: #fafafa;
+  }
