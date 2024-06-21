@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Film } from "./film.interface";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./home-page.scss";  // Import the new styles
+import "./home-page.scss";
 
 export function HomePage() {
   const [films, setFilms] = useState<Film[]>([]);
